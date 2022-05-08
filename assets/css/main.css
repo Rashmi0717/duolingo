@@ -12,26 +12,7 @@ body {
 
   #main {
     background-color: #235390;
-  }
-
-  #primary {
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    background-color: green;
-    width: fit-content;
-  }
-
-  #secondary {
-    color: white;
-    font-size: 12px;
-    padding: 9px;
-    border-radius: 10px;
-    border-width: 3px;
-    border-color: black;
-    background-color: #235390;
-
+    text-align: center;
   }
 
   #nav {
@@ -73,22 +54,45 @@ body {
     font-weight: 800;
     font-size: 27px;
     padding: 10px;
-
   }
 
-  #sec1 {
-    /* margin: 10px;*/
+  #main {
     border: none;
     display: flex;
     flex-direction: column;
     height: 100vh;
     justify-content: center;
     align-items: center;
-
   }
 
-  .border-bottom {
-    border-bottom: 1px solid black;
+  #main>img {
+    margin: 10px;
+  }
+
+  @media only screen and (min-width: 600px) {
+    #main {
+      flex-direction: row;
+    }
+  }
+
+  .btn {
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 4px;
+    border-style: solid;
+    margin: 5px;
+  }
+
+  .btn-primary {
+    border-color: green;
+    background-color: green;
+    width: fit-content;
+  }
+
+  .btn-secondary {
+    border-color: black;
+    background-color: #235390;
   }
 
   #owl {
